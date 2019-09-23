@@ -61,9 +61,9 @@ reddit = praw.Reddit(client_id='AJmL9uQjacx_8A',
                      user_agent='redditinsta')
 
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def home():
-    return "<h1>Distant Reading Archive</h1>"
+    return "<h1>Memes From Reddit App API</h1>"
 
 
 app.debug = True
