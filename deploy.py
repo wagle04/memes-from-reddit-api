@@ -19,7 +19,6 @@ class RedditPost(Resource):
                         required=True, help='limit missing')
 
     parser.add_argument('subreddits',
-                        type=list,
                         required=True,
                         help='list of subreddit missing')
 
