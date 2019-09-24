@@ -19,6 +19,7 @@ class RedditPost(Resource):
                         required=True, help='limit missing')
 
     parser.add_argument('subreddits',
+                        action='append',
                         required=True,
                         help='list of subreddit missing')
 
@@ -28,7 +29,7 @@ class RedditPost(Resource):
         time = data['time']
         limit = data['limit']
         list_of_subreddit = data['subreddits']
-        
+
         print(time)
         print(limit)
         print(list_of_subreddit)
@@ -50,7 +51,7 @@ class RedditPost(Resource):
             print(list_of_all_post)
             return jsonify(list_of_all_post)
         else:
-            return {"message":"error"},400
+            return {"message": "error"}, 400
 
 
 api.add_resource(RedditPost, '/redditposts')
@@ -66,6 +67,7 @@ def home():
 
 
 app.debug = True
+app.run()
 
 # if __name__=='__main__':
 #     app.run(port=5000,debug=True)
