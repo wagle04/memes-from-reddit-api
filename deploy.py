@@ -67,7 +67,7 @@ def home():
 
 
 app.debug = True
-app.run()
+
 
 # if __name__=='__main__':
 #     app.run(port=5000,debug=True)
