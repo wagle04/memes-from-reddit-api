@@ -8,13 +8,13 @@ hit the link: https://memes-from-reddit.herokuapp.com/redditposts <br>
 with a post request and body with a format as: <br>
 
 {<br>
-    "time": "day",<br>
-    "limit": 10,<br>
-    "subreddits": [<br>
-        "tinder",<br>
-        "funny",<br>
-        "dankmemes"<br>
-    ]<br>
+    &Tab; "time": "day",<br>
+    &Tab; "limit": 10,<br>
+    &Tab; "subreddits": [<br>
+        &Tab; &Tab; "tinder",<br>
+        &Tab; &Tab; "funny",<br>
+        &Tab; &Tab; "dankmemes"<br>
+    &Tab; ]<br>
 }<br>
 
 where time can be "day","month" or "year" <br>
